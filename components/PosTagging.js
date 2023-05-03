@@ -26,9 +26,6 @@ const PosTagging = () => {
     <div
       style={{
         padding: '1rem',
-        display: 'flex',
-        flexWrap: 'wrap',
-        gap: '1rem',
       }}
     >
       <h2>Part-of-Speech Tagging</h2>
@@ -40,7 +37,12 @@ const PosTagging = () => {
       ></textarea>
       <br />
       <button onClick={handleSubmit}>Submit</button>
-      <div dangerouslySetInnerHTML={{ __html: result }}></div>
+      <div
+        style={{
+          padding: '1rem 0',
+        }}
+        dangerouslySetInnerHTML={{ __html: result }}
+      ></div>
       <table
         style={{
           border: '1px solid black',
