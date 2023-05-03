@@ -33,7 +33,6 @@ function coloredHtml(taggedTokens) {
   return taggedTokens
     .map(({ value, pos }) => {
       const color = getColor(pos);
-      console.log(pos);
 
       if (value === ' ') {
         return value;
